@@ -56,3 +56,16 @@ button.active:not(#save-btn) {
   background-color: #007BFF;
   color: #fff;
 }
+
+#cursor {
+  pointer-events: none;
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  top: 100px;
+  left: 100px;
+  border-radius: 50%;
+  margin-top: -12.5px;
+  margin-left: -12.5px;
+  background-color: rgba(0, 255, 0, 0.5);
+}
