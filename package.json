@@ -1,11 +1,12 @@
 {
-  "name": "pdf-drawing-tool",
+  "name": "pdf-depersonalization-in-web",
   "version": "1.0.3",
   "description": "Веб-приложение для загрузки PDF, рисования поверх его страниц и сохранения результата.",
   "main": "src/script.js",
   "scripts": {
     "dev": "webpack serve --mode development --open",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
     "jspdf": "^2.5.1",
