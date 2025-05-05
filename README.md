@@ -4,6 +4,8 @@ A small web application to simplify the depersonalization of pdf files
 
 (Млаенький веб-застосунок для спрощення знеособлення pdf файлів)
 
+[View on GitHub Pages](https://riv-gh.github.io/pdf-depersonalization-in-web/)
+
 ![image](https://github.com/user-attachments/assets/cb9d0ad6-ed20-4ec3-8540-dff0f9c84756)
 
 
