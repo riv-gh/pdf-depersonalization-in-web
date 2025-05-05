@@ -3,6 +3,7 @@
   "version": "1.0.3",
   "description": "Веб-приложение для загрузки PDF, рисования поверх его страниц и сохранения результата.",
   "main": "src/script.js",
+  "homepage": "https://riv-gh.github.io/pdf-depersonalization-in-web",
   "scripts": {
     "dev": "webpack serve --mode development --open",
     "build": "webpack --mode production",
