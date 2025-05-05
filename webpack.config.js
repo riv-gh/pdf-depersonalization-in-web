@@ -1,8 +1,9 @@
 const path = require('path'); 
+const glob = require('glob');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  entry: './src/script.js',
+  entry: glob.sync('./src/**/*.js'),
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),

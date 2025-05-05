@@ -62,8 +62,8 @@ button.active:not(#save-btn) {
   position: fixed;
   width: 25px;
   height: 25px;
-  top: 100px;
-  left: 100px;
+  top: -100px;
+  left: -100px;
   border-radius: 50%;
   margin-top: -12.5px;
   margin-left: -12.5px;
