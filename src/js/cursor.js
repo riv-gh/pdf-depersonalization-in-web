@@ -1,13 +1,11 @@
 import { globalBrushSettings } from "./script.js";
 
 const pagesContainer = document.getElementById("pages-container");
-// const cusor = document.getElementById("cursor");
 
 console.log(globalBrushSettings);
 console.log(cursor)
 
 pagesContainer.addEventListener("mousemove", (event) => {
-    console.log(globalBrushSettings);
     if (event.target.tagName == "CANVAS") {
         cursor.style.backgroundColor = globalBrushSettings.brushColor;
         cursor.style.width = `${globalBrushSettings.brushSize}px`;

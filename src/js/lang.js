@@ -1,2 +1,3 @@
-import yaml from 'js-yaml';
+import lang from './../lang.yml';
 
+console.log(lang);

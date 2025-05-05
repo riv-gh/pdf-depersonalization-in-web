@@ -8,7 +8,6 @@
     "build": "webpack --mode production"
   },
   "dependencies": {
-    "js-yaml": "^4.1.0",
     "jspdf": "^2.5.1",
     "pdfjs-dist": "^3.9.320"
   },
@@ -18,7 +17,8 @@
     "style-loader": "^3.3.3",
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "webpack-dev-server": "^4.15.1",
+    "yaml-loader": "^0.8.1"
   },
   "browserslist": [
     "last 2 versions",
