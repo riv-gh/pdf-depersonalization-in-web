@@ -1,6 +1,7 @@
 import * as pdfjsLib from "pdfjs-dist/legacy/build/pdf";
 import pdfWorker from "pdfjs-dist/legacy/build/pdf.worker.entry";
 import { jsPDF } from "jspdf";
+import { getFormattedDate, invertColor } from "./tools.js"; // Импортируем функцию getFormattedDate из tools.js
 import "./styles.css";
 
 const undoText = "Відмінити";
@@ -10,10 +11,11 @@ const pageText = "Сторінка:";
 pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorker;
 
 // Глобальные настройки кисти, которые применяются ко всем страницам
-const globalBrushSettings = {
+export const globalBrushSettings = {
   brushColor: "#ffffff",
   brushShape: "round",
   brushSize: 25,
+  borderColor: "#000000",
 };
 
 // Массив для хранения конфигураций страниц
@@ -72,6 +74,7 @@ function initGlobalToolbar() {
   const colorPicker = document.getElementById("global-color-picker");
   colorPicker.addEventListener("change", (e) => {
     updateAllPages("brushColor", e.target.value);
+    updateAllPages("borderColor", invertColor(e.target.value));
   });
 
   const sizeSlider = document.getElementById("global-size-slider");
@@ -195,19 +198,19 @@ document.getElementById("file-input").addEventListener("change", (e) => {
   }
 });
 
-// Функция для получения текущей даты в формате YYYY-MM-DD_HH-MM-SS
-// Используется для имени файла при сохранении PDF
-function getFormattedDate() {
-  let now = new Date();
-  let year = now.getFullYear();
-  let month = String(now.getMonth() + 1).padStart(2, '0');
-  let day = String(now.getDate()).padStart(2, '0');
-  let hours = String(now.getHours()).padStart(2, '0');
-  let minutes = String(now.getMinutes()).padStart(2, '0');
-  let seconds = String(now.getSeconds()).padStart(2, '0');
+// // Функция для получения текущей даты в формате YYYY-MM-DD_HH-MM-SS
+// // Используется для имени файла при сохранении PDF
+// function getFormattedDate() {
+//   let now = new Date();
+//   let year = now.getFullYear();
+//   let month = String(now.getMonth() + 1).padStart(2, '0');
+//   let day = String(now.getDate()).padStart(2, '0');
+//   let hours = String(now.getHours()).padStart(2, '0');
+//   let minutes = String(now.getMinutes()).padStart(2, '0');
+//   let seconds = String(now.getSeconds()).padStart(2, '0');
 
-  return `${year}-${month}-${day}_${hours}-${minutes}-${seconds}`;
-}
+//   return `${year}-${month}-${day}_${hours}-${minutes}-${seconds}`;
+// }
 
 
 // Сохранение PDF — для каждой страницы извлекается изображение из canvas
