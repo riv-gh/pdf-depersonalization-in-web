@@ -1,12 +1,14 @@
 import * as pdfjsLib from "pdfjs-dist/legacy/build/pdf";
 import pdfWorker from "pdfjs-dist/legacy/build/pdf.worker.entry";
 import { jsPDF } from "jspdf";
+import { getTranslation } from "./lang.js"; // Импортируем функцию getTranslation из i18n.js
 import { getFormattedDate, invertColor } from "./tools.js"; // Импортируем функцию getFormattedDate из tools.js
 import "./../styles/styles.css"; // Импортируем стили
 
-const undoText = "Відмінити";
-const resetText = "Скинути";
-const pageText = "Сторінка:";
+// Устанавливаем локализацию
+const undoText = getTranslation('ui.undo');
+const resetText = getTranslation('ui.reset');
+const pageText = getTranslation('ui.page');
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorker;
 
@@ -105,6 +107,7 @@ function createPageToolbar(pageConfig) {
 
   // Кнопка отмены последнего действия
   const undoBtn = document.createElement("button");
+  undoBtn.classList.add("t-undo-btn");
   undoBtn.textContent = undoText;
   undoBtn.addEventListener("click", () => {
     if (pageConfig.undoStack.length > 0) {
@@ -115,6 +118,7 @@ function createPageToolbar(pageConfig) {
 
   // Кнопка сброса страницы (до начала рисования)
   const resetBtn = document.createElement("button");
+  resetBtn.classList.add("t-reset-btn");
   resetBtn.textContent = resetText;
   resetBtn.addEventListener("click", () => {
     pageConfig.ctx.putImageData(pageConfig.originalImageData, 0, 0);
@@ -182,7 +186,7 @@ document.getElementById("file-input").addEventListener("change", (e) => {
           const pageDiv = document.createElement("div");
           pageDiv.classList.add("page");
           const label = document.createElement("div");
-          label.textContent = `${pageText}: ${i}`;
+          label.textContent = `<span class="t-page-text">${pageText}</span>: ${i}`;
           label.style.marginBottom = "5px";
 
           pageDiv.appendChild(label);
@@ -197,20 +201,6 @@ document.getElementById("file-input").addEventListener("change", (e) => {
     alert("Пожалуйста, выберите PDF файл.");
   }
 });
-
-// // Функция для получения текущей даты в формате YYYY-MM-DD_HH-MM-SS
-// // Используется для имени файла при сохранении PDF
-// function getFormattedDate() {
-//   let now = new Date();
-//   let year = now.getFullYear();
-//   let month = String(now.getMonth() + 1).padStart(2, '0');
-//   let day = String(now.getDate()).padStart(2, '0');
-//   let hours = String(now.getHours()).padStart(2, '0');
-//   let minutes = String(now.getMinutes()).padStart(2, '0');
-//   let seconds = String(now.getSeconds()).padStart(2, '0');
-
-//   return `${year}-${month}-${day}_${hours}-${minutes}-${seconds}`;
-// }
 
 
 // Сохранение PDF — для каждой страницы извлекается изображение из canvas

@@ -41,6 +41,12 @@ canvas {
   margin-bottom: 10px;
 }
 
+#language-selector {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
 button:not(#save-btn) {
   padding: 5px 10px;
   background-color: #cfe6ff;
@@ -65,8 +71,4 @@ button.active:not(#save-btn) {
   top: -100px;
   left: -100px;
   opacity: 0.5;
-  /* border-radius: 50%;
-  margin-top: -12.5px;
-  margin-left: -12.5px;
-  background-color: rgba(0, 255, 0, 0.5); */
 }

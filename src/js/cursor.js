@@ -2,8 +2,6 @@ import { globalBrushSettings } from "./script.js";
 
 const pagesContainer = document.getElementById("pages-container");
 
-console.log(globalBrushSettings);
-console.log(cursor)
 
 pagesContainer.addEventListener("mousemove", (event) => {
     if (event.target.tagName == "CANVAS") {

@@ -6,26 +6,27 @@
   <title>PDF знеособлення</title>
 </head>
 <body>
-  <h1>PDF знеособлення</h1>
+  <select id="language-selector">
+    <option value="en-us">English</option>
+    <option value="ru-ru">Русский</option>
+    <option value="uk-ua">Українська</option>
+  </select>
+  <h1 id="app-title">PDF знеособлення</h1>
+  <p id="app-description">Завантажте PDF файл, щоб почати редагування.</p>
   <div id="uplad-download-container">
     <input type="file" id="file-input" accept="application/pdf">
-    <label>
-      Якість збереження:
-      <input type="range" id="save-quality-slider" min="0.1" max="1" value="0.2" step="0.1">
-    </label>
+    <label for="save-quality-slider">Якість збереження:</label>
+    <input type="range" id="save-quality-slider" min="0.1" max="1" value="0.2" step="0.1">
+    
     <button id="save-btn">Зберегти</button>
   </div>
 
   <!-- Глобальное меню для настроек кисти -->
   <div id="global-toolbar">
-    <label>
-      Колір:
-      <input type="color" id="global-color-picker" value="#FFFFFF">
-    </label>
-    <label>
-      Розмір:
-      <input type="range" id="global-size-slider" min="1" max="50" value="25" step="1">
-    </label>
+    <label for="global-color-picker">Колір:</label>
+    <input type="color" id="global-color-picker" value="#FFFFFF">
+    <label for="global-size-slider">Розмір:</label>
+    <input type="range" id="global-size-slider" min="1" max="50" value="25" step="1">
     <button id="global-brush-round" class="active">Коло</button>
     <button id="global-brush-square">Квадрат</button>
   </div>

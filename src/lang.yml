@@ -1,36 +1,42 @@
 uk-ua:
+  langName: Українська
   defaultTitle: PDF знеособлення
   defaultDescription: Інструмент для знеособлення PDF-документів та збереження конфіденційності.
   ui:
+    quality: Якість збереження (вплаває на розмір файлу)
     save: Зберегти
     color: Колір
     size: Розмір
     circle: Коло
     square: Квадрат
-    cancel: Скасувати
-    reset: Скинути
-    download: Завантажити
+    page: Cторінка
+    undo: Скасувати останню дію
+    reset: Скинути до початкового стану
 ru-ru:
+  langName: Русский
   defaultTitle: PDF деперсонализация
   defaultDescription: Инструмент для деперсонализации PDF-документов и сохранения конфиденциальности.
   ui:
+    quality: Качество сохранения (влияет на размер файла)
     save: Сохранить
     color: Цвет
     size: Размер
     circle: Круг
     square: Квадрат
-    cancel: Отменить
-    reset: Сбросить
-    download: Скачать
+    page: Страница
+    undo: Отменить последнее действие
+    reset: Сбросить до начального состояния
 en-us:
+  langName: English
   defaultTitle: PDF depersonalization
   defaultDescription: Tool for depersonalization PDF documents and preserving privacy.
   ui:
+    quality: Quality of saving (affects file size)
     save: Save
     color: Color
     size: Size
     circle: Circle
     square: Square
-    cancel: Cancel
-    reset: Reset
-    download: Download
+    page: Page
+    undo: Undo last action
+    reset: Reset to initial state
