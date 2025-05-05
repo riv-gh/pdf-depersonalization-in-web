@@ -1,7 +1,7 @@
 import lang from './../lang.yml';
 
 const userLang = navigator.language || navigator.userLanguage; // Например, "uk-UA"
-const defaultLang = 'en-us'; // Язык по умолчанию
+const defaultLang = 'uk-ua'; // Язык по умолчанию
 let currentLang = lang[userLang.toLowerCase()] ? userLang.toLowerCase() : defaultLang;
 
 export function getTranslation(key) {
@@ -10,7 +10,15 @@ export function getTranslation(key) {
 }
 
 const languageSelector = document.getElementById('language-selector');
-console.log(languageSelector);
+for (let langKey in lang) {
+  const option = document.createElement('option');
+  option.value = langKey;
+  option.textContent = lang[langKey].langName;
+  if (langKey === currentLang) {
+    option.selected = true;
+  }
+  languageSelector.appendChild(option);
+}
 console.log(lang);
 console.log(currentLang);
 

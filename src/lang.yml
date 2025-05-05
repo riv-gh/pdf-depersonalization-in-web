@@ -40,3 +40,45 @@ en-us:
     page: Page
     undo: Undo last action
     reset: Reset to initial state
+de-de:
+  langName: Deutsch
+  defaultTitle: PDF-Datenschutz
+  defaultDescription: Tool zur Anonymisierung von PDF-Dokumenten und zum Schutz der Privatsphäre.
+  ui:
+    quality: Qualität der Speicherung (beeinflusst die Dateigröße)
+    save: Speichern
+    color: Farbe
+    size: Größe
+    circle: Kreis
+    square: Quadrat
+    page: Seite
+    undo: Letzte Aktion rückgängig machen
+    reset: Auf Anfangszustand zurücksetzen
+fr-fr:
+  langName: Français
+  defaultTitle: Dépersonnalisation PDF
+  defaultDescription: Outil de dépersonnalisation des documents PDF et de préservation de la vie privée.
+  ui:
+    quality: Qualité de sauvegarde (affecte la taille du fichier)
+    save: Enregistrer
+    color: Couleur
+    size: Taille
+    circle: Cercle
+    square: Carré
+    page: Page
+    undo: Annuler la dernière action
+    reset: Réinitialiser à l'état initial
+es-es:
+  langName: Español
+  defaultTitle: Despersonalización de PDF
+  defaultDescription: Herramienta para la despersonalización de documentos PDF y la preservación de la privacidad.
+  ui:
+    quality: Calidad de guardado (afecta el tamaño del archivo)
+    save: Guardar
+    color: Color
+    size: Tamaño
+    circle: Círculo
+    square: Cuadrado
+    page: Página
+    undo: Deshacer última acción
+    reset: Restablecer a estado inicial    
