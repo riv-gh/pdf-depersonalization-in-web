@@ -11,7 +11,7 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorker;
 
 // Глобальные настройки кисти, которые применяются ко всем страницам
 const globalBrushSettings = {
-  brushColor: "#000000",
+  brushColor: "#ffffff",
   brushShape: "round",
   brushSize: 25,
 };
