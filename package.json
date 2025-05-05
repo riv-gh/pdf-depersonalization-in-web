@@ -1,6 +1,6 @@
 {
   "name": "pdf-drawing-tool",
-  "version": "1.0.0",
+  "version": "1.0.x",
   "description": "Веб-приложение для загрузки PDF, рисования поверх его страниц и сохранения результата.",
   "main": "src/script.js",
   "scripts": {
@@ -8,16 +8,17 @@
     "build": "webpack --mode production"
   },
   "dependencies": {
-    "pdfjs-dist": "^3.9.320",
-    "jspdf": "^2.5.1"
+    "js-yaml": "^4.1.0",
+    "jspdf": "^2.5.1",
+    "pdfjs-dist": "^3.9.320"
   },
   "devDependencies": {
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.3",
     "webpack": "^5.88.1",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1",
-    "css-loader": "^6.7.3",
-    "style-loader": "^3.3.3",
-    "html-webpack-plugin": "^5.5.0"
+    "webpack-dev-server": "^4.15.1"
   },
   "browserslist": [
     "last 2 versions",

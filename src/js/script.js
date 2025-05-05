@@ -2,7 +2,7 @@ import * as pdfjsLib from "pdfjs-dist/legacy/build/pdf";
 import pdfWorker from "pdfjs-dist/legacy/build/pdf.worker.entry";
 import { jsPDF } from "jspdf";
 import { getFormattedDate, invertColor } from "./tools.js"; // Импортируем функцию getFormattedDate из tools.js
-import "./styles.css";
+import "./../styles/styles.css"; // Импортируем стили
 
 const undoText = "Відмінити";
 const resetText = "Скинути";
