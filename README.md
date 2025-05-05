@@ -1,6 +1,11 @@
 # pdf-depersonalization-in-web
-Млаенький веб-застосунок для спрощення знеособлення pdf файлів
-![image](https://github.com/user-attachments/assets/ce6b7f2c-2d9a-4089-934a-c5dac8f48d6c)
+
+A small web application to simplify the depersonalization of pdf files
+
+(Млаенький веб-застосунок для спрощення знеособлення pdf файлів)
+
+![image](https://github.com/user-attachments/assets/cb9d0ad6-ed20-4ec3-8540-dff0f9c84756)
+
 
 
 [Docker Hub](https://hub.docker.com/r/daenur/pdf-depersonalization-in-web): `daenur/pdf-depersonalization-in-web:latest`
