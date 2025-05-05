@@ -216,13 +216,16 @@ document.getElementById("save-btn").addEventListener("click", () => {
   const canvasPages = document.querySelectorAll(".page canvas");
 
   canvasPages.forEach((canvas, index) => {
-    const imgData = canvas.toDataURL("image/png");
+    const imgData = canvas.toDataURL(
+      "image/jpeg",
+      +document.getElementById('save-quality-slider').value
+    );
     if (index > 0) {
       pdf.addPage();
     }
     const pdfWidth = pdf.internal.pageSize.getWidth();
     const pdfHeight = pdf.internal.pageSize.getHeight();
-    pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+    pdf.addImage(imgData, "JPEG", 0, 0, pdfWidth, pdfHeight)
   });
   pdf.save(`Знеособлено - ${document.getElementById('file-input').files[0].name.replace(/\.pdf$/,'')} [${getFormattedDate()}].pdf`);
 });
