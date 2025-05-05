@@ -50,6 +50,8 @@ function updateUI() {
   updateUIElement('#global-brush-square', 'ui.square');
   updateUIElement('#global-brush-square', 'ui.square');
   updateUIElement('.t-undo-btn', 'ui.undo');
+  updateUIElement('.t-reset-btn', 'ui.reset');
+  updateUIElement('.t-page-text', 'ui.page');
   updateUIElement('label[for="save-quality-slider"]', 'ui.quality');
   updateUIElement('label[for="global-color-picker"]', 'ui.color');
   updateUIElement('label[for="global-size-slider"]', 'ui.size');

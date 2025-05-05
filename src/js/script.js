@@ -186,7 +186,7 @@ document.getElementById("file-input").addEventListener("change", (e) => {
           const pageDiv = document.createElement("div");
           pageDiv.classList.add("page");
           const label = document.createElement("div");
-          label.textContent = `<span class="t-page-text">${pageText}</span>: ${i}`;
+          label.innerHTML = `<span class="t-page-text">${pageText}</span>: ${i}`;
           label.style.marginBottom = "5px";
 
           pageDiv.appendChild(label);

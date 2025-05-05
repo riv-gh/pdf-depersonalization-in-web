@@ -1,6 +1,6 @@
 {
   "name": "pdf-drawing-tool",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Веб-приложение для загрузки PDF, рисования поверх его страниц и сохранения результата.",
   "main": "src/script.js",
   "scripts": {
