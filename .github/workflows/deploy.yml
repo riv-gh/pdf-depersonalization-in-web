@@ -23,4 +23,11 @@ jobs:
       run: npm run build
 
     - name: Deploy to GitHub Pages
-      run: npm run deploy
+      run: |
+        git config user.name "GitHub Actions"
+        git config "github-actions@github.com"
+        git remote set-url origin https://${{ secrets.GITHUB_TOKEN }}@github.com/riv-gh/pdf-depersonalization-in-web.git
+        npm run deploy
+
+    # - name: Deploy to GitHub Pages
+    #   run: npm run deploy
