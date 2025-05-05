@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack serve --mode development --open",
     "build": "webpack --mode production",
-    "deploy": "npm run build && gh-pages -d dist"
+    "deploy": "npm run build && gh-pages --no-history -d dist"
   },
   "dependencies": {
     "jspdf": "^2.5.1",
