@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  min-width: 520px;
+}
+
+#uplad-download-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#global-toolbar {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+#pages-container {
+  margin-top: 20px;
+}
+
+.page {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+canvas {
+  border: 1px solid #000;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.toolbar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+button:not(#save-btn) {
+  padding: 5px 10px;
+  background-color: #cfe6ff;
+  cursor: pointer;
+}
+
+button:hover:not(#save-btn) {
+  background-color: #6fb5ff;
+  color: #fff;
+}
+
+button.active:not(#save-btn) {
+  background-color: #007BFF;
+  color: #fff;
+}

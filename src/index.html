@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PDF знеособлення</title>
+</head>
+<body>
+  <h1>PDF знеособлення</h1>
+  <div id="uplad-download-container">
+    <input type="file" id="file-input" accept="application/pdf">
+    <button id="save-btn">Зберегти</button>
+  </div>
+
+  <!-- Глобальное меню для настроек кисти -->
+  <div id="global-toolbar">
+    <label>
+      Колір:
+      <input type="color" id="global-color-picker" value="#000000">
+    </label>
+    <label>
+      Розмір:
+      <input type="range" id="global-size-slider" min="1" max="50" value="25" step="1">
+    </label>
+    <button id="global-brush-round" class="active">Коло</button>
+    <button id="global-brush-square">Квадрат</button>
+  </div>
+
+  <div id="pages-container"></div>
+  <div id="cursor"></div>
+</body>
+</html>
