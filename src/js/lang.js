@@ -19,10 +19,6 @@ for (let langKey in lang) {
   }
   languageSelector.appendChild(option);
 }
-console.log(lang);
-console.log(currentLang);
-
-console.log(getTranslation('ui.save'));
 
 languageSelector.addEventListener('change', (e) => {
   const selectedLang = e.target.value;
@@ -34,14 +30,12 @@ languageSelector.addEventListener('change', (e) => {
 
 function updateUI() {
   function updateUIElement(selector, translationKey) {
-    // const element = document.selector(id);
-    // if (element) {
-    //   element.textContent = getTranslation(translationKey);
-    // }
     document.querySelectorAll(selector).forEach(element=>{
       element.textContent = getTranslation(translationKey)+(element.tagName=='LABEL'?':':'');
     });
   }
+  
+  document.documentElement.lang = currentLang.split('-')[0]; //обновление атрибута lang в теге html
   document.title = getTranslation('defaultTitle');
   updateUIElement('#app-title', 'defaultTitle');
   updateUIElement('#app-description', 'defaultDescription');
