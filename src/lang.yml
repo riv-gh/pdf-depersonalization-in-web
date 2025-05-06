@@ -2,6 +2,8 @@ uk-ua:
   langName: Українська
   defaultTitle: PDF знеособлення
   defaultDescription: Інструмент для знеособлення PDF-документів та збереження конфіденційності.
+  notification:
+    noFileToSave: Будь ласка, виберіть PDF файл.
   ui:
     quality: Якість збереження (вплаває на розмір файлу)
     save: Зберегти
@@ -12,10 +14,13 @@ uk-ua:
     page: Cторінка
     undo: Скасувати останню дію
     reset: Скинути до початкового стану
+    pdfSavePrefix: Знеособлено 
 ru-ru:
   langName: Русский
   defaultTitle: PDF деперсонализация
   defaultDescription: Инструмент для деперсонализации PDF-документов и сохранения конфиденциальности.
+  notification:
+    noFileToSave: Пожалуйста, выберите PDF файл.
   ui:
     quality: Качество сохранения (влияет на размер файла)
     save: Сохранить
@@ -26,10 +31,13 @@ ru-ru:
     page: Страница
     undo: Отменить последнее действие
     reset: Сбросить до начального состояния
+    pdfSavePrefix: Деперсонализировано
 en-us:
   langName: English
   defaultTitle: PDF depersonalization
   defaultDescription: Tool for depersonalization PDF documents and preserving privacy.
+  notification:
+    noFileToSave: Please select a PDF file.
   ui:
     quality: Quality of saving (affects file size)
     save: Save
@@ -40,10 +48,13 @@ en-us:
     page: Page
     undo: Undo last action
     reset: Reset to initial state
+    pdfSavePrefix: Depersonalized
 de-de:
   langName: Deutsch
   defaultTitle: PDF-Datenschutz
   defaultDescription: Tool zur Anonymisierung von PDF-Dokumenten und zum Schutz der Privatsphäre.
+  notification:
+    noFileToSave: Bitte wählen Sie eine PDF-Datei aus.
   ui:
     quality: Qualität der Speicherung (beeinflusst die Dateigröße)
     save: Speichern
@@ -54,10 +65,13 @@ de-de:
     page: Seite
     undo: Letzte Aktion rückgängig machen
     reset: Auf Anfangszustand zurücksetzen
+    pdfSavePrefix: Anonymisiert
 fr-fr:
   langName: Français
   defaultTitle: Dépersonnalisation PDF
   defaultDescription: Outil de dépersonnalisation des documents PDF et de préservation de la vie privée.
+  notification:
+    noFileToSave: Veuillez sélectionner un fichier PDF.
   ui:
     quality: Qualité de sauvegarde (affecte la taille du fichier)
     save: Enregistrer
@@ -68,10 +82,13 @@ fr-fr:
     page: Page
     undo: Annuler la dernière action
     reset: Réinitialiser à l'état initial
+    pdfSavePrefix: Dépersonnalisé
 es-es:
   langName: Español
   defaultTitle: Despersonalización de PDF
   defaultDescription: Herramienta para la despersonalización de documentos PDF y la preservación de la privacidad.
+  notification:
+    noFileToSave: Por favor, seleccione un archivo PDF.
   ui:
     quality: Calidad de guardado (afecta el tamaño del archivo)
     save: Guardar
@@ -81,4 +98,5 @@ es-es:
     square: Cuadrado
     page: Página
     undo: Deshacer última acción
-    reset: Restablecer a estado inicial    
+    reset: Restablecer a estado inicial
+    pdfSavePrefix: Despersonalizado 

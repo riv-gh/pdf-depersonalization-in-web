@@ -9,6 +9,8 @@ import "./../styles/styles.css"; // Импортируем стили
 const undoText = getTranslation('ui.undo');
 const resetText = getTranslation('ui.reset');
 const pageText = getTranslation('ui.page');
+const pdfSavePrefix = getTranslation('ui.pdfSavePrefix');
+const noFileToSaveText = getTranslation('notification.noFileToSave');
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorker;
 
@@ -198,7 +200,7 @@ document.getElementById("file-input").addEventListener("change", (e) => {
     };
     reader.readAsArrayBuffer(file);
   } else {
-    alert("Пожалуйста, выберите PDF файл.");
+    alert(noFileToSaveText);
   }
 });
 
@@ -220,7 +222,7 @@ document.getElementById("save-btn").addEventListener("click", () => {
     const pdfHeight = pdf.internal.pageSize.getHeight();
     pdf.addImage(imgData, "JPEG", 0, 0, pdfWidth, pdfHeight)
   });
-  pdf.save(`Знеособлено - ${document.getElementById('file-input').files[0].name.replace(/\.pdf$/,'')} [${getFormattedDate()}].pdf`);
+  pdf.save(`${pdfSavePrefix} - ${document.getElementById('file-input').files[0]?.name.replace(/\.pdf$/,'')||'null'} [${getFormattedDate()}].pdf`);
 });
 
 // Инициализируем глобальное меню сразу после загрузки документа
