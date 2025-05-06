@@ -6,5 +6,5 @@ if (!pkg.version) {
   process.exit(1);
 }
 require('fs').writeFileSync('./../package.json', JSON.stringify(pkg, null, 2));
-require('child_process').execSync(`git add package.json && git commit -m "Set version: ${pkg.version}" && git tag ${pkg.version}`, {stdio: 'inherit'});
+require('child_process').execSync(`git add package.json && git commit -m "Set version: ${pkg.version}" && git tag ${pkg.version}`, {stdio: 'inherit', cwd: '..'});
 console.log(`Set version: ${pkg.version}`);
