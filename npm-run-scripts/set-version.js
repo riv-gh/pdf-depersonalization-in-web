@@ -4,12 +4,10 @@ const pkg=require('./../package.json');
 
 const inputVersion=process.argv[2];
 const oldVersion = pkg.version;
+const versionFomatMessage = 'Version format: x.x.x (e.g., 1.0.0) or "+" for incrementing the patch version';
 
 if (!inputVersion) {
-  console.error(
-    'Version not specified. Usage: npm run set-version <version>\n'+
-    'Version format: x.x.x (e.g., 1.0.0) or "+" for incrementing the patch version'
-  );
+  console.error(`Version not specified. Usage: npm run set-version <version>\n${versionFomatMessage}`);
   process.exit(1);
 }
 
@@ -18,7 +16,7 @@ if (inputVersion === '+') {
   console.log(`Incremented version from ${oldVersion} to ${pkg.version}`);
 }
 else if (!inputVersion.match(/^\d+\.\d+\.\d+$/)) {
-  console.error('Version format is incorrect. Expected format: x.x.x (e.g., 1.0.0)');
+  console.error(`Version format <${inputVersion}> is incorrect \n${versionFomatMessage}`);
   process.exit(1);
 }
 else {
