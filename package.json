@@ -10,7 +10,7 @@
     "build": "webpack --mode production",
     "deploy": "npm run build && gh-pages --no-history -d dist",
     "set-version": "node ./npm-run-scripts/set-version.js",
-    "docker-build": "node -e \"const pkg=require('./package.json'); require('child_process').execSync(`docker build -t ${pkg.dockerhub}:latest -t ${pkg.dockerhub}:${pkg.version} .`, {stdio: 'inherit'});\"",
+    "docker-build": "node ./npm-run-scripts/docker-build.js",
     "docker-push": "node -e \"const pkg=require('./package.json'); require('child_process').execSync(`docker push ${pkg.dockerhub}:latest && docker push ${pkg.dockerhub}:${pkg.version}`, {stdio: 'inherit'});\""
   },
   "dependencies": {
