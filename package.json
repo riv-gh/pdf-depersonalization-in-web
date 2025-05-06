@@ -1,6 +1,6 @@
 {
   "name": "pdf-depersonalization-in-web",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Веб-приложение для загрузки PDF, рисования поверх его страниц и сохранения результата.",
   "main": "src/script.js",
   "homepage": "https://riv-gh.github.io/pdf-depersonalization-in-web",
