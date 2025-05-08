@@ -29,6 +29,10 @@ body {
   margin-bottom: 20px;
 }
 
+.canvas-container {
+  overflow-x: auto;
+}
+
 canvas {
   border: 1px solid #000;
   display: block;
@@ -58,7 +62,8 @@ button:hover:not(#save-btn) {
   color: #fff;
 }
 
-button.active:not(#save-btn) {
+button.active:not(#save-btn),
+button:active:not(#save-btn) {
   background-color: #007BFF;
   color: #fff;
 }

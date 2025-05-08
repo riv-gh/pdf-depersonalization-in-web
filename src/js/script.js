@@ -187,13 +187,19 @@ document.getElementById("file-input").addEventListener("change", (e) => {
           // Создаём контейнер для страницы (номер, canvas и панель действий)
           const pageDiv = document.createElement("div");
           pageDiv.classList.add("page");
+
           const label = document.createElement("div");
           label.innerHTML = `<span class="t-page-text">${pageText}</span>: ${i}`;
           label.style.marginBottom = "5px";
 
+          const canvasContainer = document.createElement("div");
+          canvasContainer.classList.add("canvas-container");                      
+          canvasContainer.appendChild(canvas);
+
           pageDiv.appendChild(label);
-          pageDiv.appendChild(canvas);
           pageDiv.appendChild(toolbar);
+          pageDiv.appendChild(canvasContainer);
+          // pageDiv.appendChild(canvas);
           pagesContainer.appendChild(pageDiv);
         }
       })();
