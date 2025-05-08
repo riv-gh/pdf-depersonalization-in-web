@@ -205,23 +205,40 @@ document.getElementById("file-input").addEventListener("change", (e) => {
 });
 
 
-// Сохранение PDF — для каждой страницы извлекается изображение из canvas
 document.getElementById("save-btn").addEventListener("click", () => {
-  const pdf = new jsPDF();
   const canvasPages = document.querySelectorAll(".page canvas");
+
+  // Если нет страниц для сохранения, выводим сообщение
+  if (canvasPages.length === 0) {
+    alert(noFileToSaveText);
+    return;
+  }
+
+  const pdf = new jsPDF({
+    unit: "mm",
+    format: "a4", // Размер A4 как стандартный
+    orientation: (canvasPages[0].width > canvasPages[0].height) ? "landscape" : "portrait"
+    // Ориентация документа зависит от первой страницы
+  });
 
   canvasPages.forEach((canvas, index) => {
     const imgData = canvas.toDataURL(
       "image/jpeg",
       +document.getElementById('save-quality-slider').value
     );
+
     if (index > 0) {
-      pdf.addPage();
+      pdf.addPage(
+        "a4",
+        (canvas.width > canvas.height) ? "landscape" : "portrait"
+      );
     }
+
     const pdfWidth = pdf.internal.pageSize.getWidth();
     const pdfHeight = pdf.internal.pageSize.getHeight();
-    pdf.addImage(imgData, "JPEG", 0, 0, pdfWidth, pdfHeight)
+    pdf.addImage(imgData, "JPEG", 0, 0, pdfWidth, pdfHeight);
   });
+
   pdf.save(`${pdfSavePrefix} - ${document.getElementById('file-input').files[0]?.name.replace(/\.pdf$/,'')||'null'} [${getFormattedDate()}].pdf`);
 });
 
