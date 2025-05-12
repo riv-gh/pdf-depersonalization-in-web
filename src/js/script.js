@@ -5,12 +5,8 @@ import { getTranslation } from "./lang.js"; // Импортируем функц
 import { getFormattedDate, invertColor } from "./tools.js"; // Импортируем функцию getFormattedDate из tools.js
 import "./../styles/styles.css"; // Импортируем стили
 
-// Устанавливаем локализацию
-const undoText = getTranslation('ui.undo');
-const resetText = getTranslation('ui.reset');
-const pageText = getTranslation('ui.page');
-const pdfSavePrefix = getTranslation('ui.pdfSavePrefix');
-const noFileToSaveText = getTranslation('notification.noFileToSave');
+// Создаем переменные для локализации
+let undoText, resetText, pageText, pdfSavePrefix, noFileToSaveText;
 
 pdfjsLib.GlobalWorkerOptions.workerSrc = pdfWorker;
 
@@ -134,6 +130,13 @@ function createPageToolbar(pageConfig) {
 
 // Обработка выбора PDF-файла и последовательное рендеринг страниц
 document.getElementById("file-input").addEventListener("change", (e) => {
+  // Устанавливаем локализацию для интерфейса страниц
+  undoText = getTranslation('ui.undo');
+  resetText = getTranslation('ui.reset');
+  pageText = getTranslation('ui.page');
+  pdfSavePrefix = getTranslation('ui.pdfSavePrefix');
+  noFileToSaveText = getTranslation('notification.noFileToSave');
+  // //Устанавливаем локализацию для интерфейса страниц
   const file = e.target.files[0];
   if (file && file.type === "application/pdf") {
     const reader = new FileReader();
