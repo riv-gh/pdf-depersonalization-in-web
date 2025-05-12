@@ -26,6 +26,20 @@ services:
     image: daenur/pdf-depersonalization-in-web:latest
     pull_policy: always
     restart: unless-stopped
+    environment:
+        CUSTOM_TITLE: "change the title if needed"
+        CUSTOM_DESCRIPTION: "change the description if needed"
+        DEFAULT_LANG: en-US
+        # Avalible languages:
+        #   de-DE – German (Germany)
+        #   en-US – English (United States) [default]
+        #   es-ES – Spanish (Spain)
+        #   fr-FR – French (France)
+        #   ru-RU – Russian (Russia)
+        #   uk-UA – Ukrainian (Ukraine)
+        BRUSH_COLOR: "#ffffff"
+        BRUSH_SIZE: 25 # from 1 to 50
+        SAVE_QUALITY: 0.2 # from 0.1 to 1
     ports:
       - 80:80
 ```

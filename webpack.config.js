@@ -1,6 +1,7 @@
 const path = require('path'); 
 const glob = require('glob');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: glob.sync('./src/**/*.js'),
@@ -24,6 +25,12 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html'
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        { from: './src/configs', to: './configs/' },
+        { from: './src/icons', to: './' }
+      ]
     })
   ],
   devServer: {

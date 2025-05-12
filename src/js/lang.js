@@ -1,10 +1,8 @@
 import lang from './../lang.yml';
 
-const userLang = navigator.language || navigator.userLanguage; // Например, "uk-UA"
-const defaultLang = 'uk-ua'; // Язык по умолчанию
-let currentLang = lang[userLang.toLowerCase()] ? userLang.toLowerCase() : defaultLang;
+let currentLang = 'en-us';
 
-export function getTranslation(key) {
+function getTranslation(key) {
   const keys = key.split('.');
   return keys.reduce((obj, k) => (obj && obj[k] ? obj[k] : null), lang[currentLang]) || key;
 }
@@ -28,13 +26,16 @@ languageSelector.addEventListener('change', (e) => {
   }
 });
 
+
 function updateUI() {
   function updateUIElement(selector, translationKey) {
     document.querySelectorAll(selector).forEach(element=>{
-      element.textContent = getTranslation(translationKey)+(element.tagName=='LABEL'?':':'');
+      element.classList.contains('no-translate')
+      ? null
+      : element.textContent = getTranslation(translationKey)+(element.tagName=='LABEL'?':':'');
     });
   }
-  
+
   document.documentElement.lang = currentLang.split('-')[0]; //обновление атрибута lang в теге html
   document.title = getTranslation('defaultTitle');
   updateUIElement('#app-title', 'defaultTitle');
@@ -49,6 +50,18 @@ function updateUI() {
   updateUIElement('label[for="save-quality-slider"]', 'ui.quality');
   updateUIElement('label[for="global-color-picker"]', 'ui.color');
   updateUIElement('label[for="global-size-slider"]', 'ui.size');
+  updateUIElement('#footer-text', 'footer.text');
+  updateUIElement('#license-link', 'footer.licenseLinkText');
 }
 
-updateUI();
+function initLanguage(initLang) {
+  languageSelector.value = initLang;
+  currentLang = initLang;
+  updateUI();
+}
+
+export {
+  getTranslation,
+  initLanguage,
+};
+

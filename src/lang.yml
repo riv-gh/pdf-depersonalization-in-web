@@ -14,7 +14,10 @@ uk-ua:
     page: Cторінка
     undo: Скасувати останню дію
     reset: Скинути до початкового стану
-    pdfSavePrefix: Знеособлено 
+    pdfSavePrefix: Знеособлено
+  footer:
+    text: Всі права захищені.
+    licenseLinkText: Ліцензія
 ru-ru:
   langName: Русский
   defaultTitle: PDF деперсонализация
@@ -32,6 +35,9 @@ ru-ru:
     undo: Отменить последнее действие
     reset: Сбросить до начального состояния
     pdfSavePrefix: Деперсонализировано
+  footer:
+    text: Все права защищены.
+    licenseLinkText: Лицензия
 en-us:
   langName: English
   defaultTitle: PDF depersonalization
@@ -49,6 +55,9 @@ en-us:
     undo: Undo last action
     reset: Reset to initial state
     pdfSavePrefix: Depersonalized
+  footer:
+    text: All rights reserved.
+    licenseLinkText: License
 de-de:
   langName: Deutsch
   defaultTitle: PDF-Datenschutz
@@ -66,6 +75,9 @@ de-de:
     undo: Letzte Aktion rückgängig machen
     reset: Auf Anfangszustand zurücksetzen
     pdfSavePrefix: Anonymisiert
+  footer:
+    text: Alle Rechte vorbehalten.
+    licenseLinkText: Lizenz
 fr-fr:
   langName: Français
   defaultTitle: Dépersonnalisation PDF
@@ -83,6 +95,9 @@ fr-fr:
     undo: Annuler la dernière action
     reset: Réinitialiser à l'état initial
     pdfSavePrefix: Dépersonnalisé
+  footer:
+    text: Tous droits réservés.
+    licenseLinkText: Licence
 es-es:
   langName: Español
   defaultTitle: Despersonalización de PDF
@@ -99,4 +114,7 @@ es-es:
     page: Página
     undo: Deshacer última acción
     reset: Restablecer a estado inicial
-    pdfSavePrefix: Despersonalizado 
+    pdfSavePrefix: Despersonalizado
+  footer:
+    text: Todos los derechos reservados.
+    licenseLinkText: Licencia

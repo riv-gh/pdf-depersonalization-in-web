@@ -2,6 +2,7 @@ body {
   font-family: Arial, sans-serif;
   padding: 20px;
   min-width: 520px;
+  background-color: #eaeaea;
 }
 
 #uplad-download-container {
@@ -17,6 +18,12 @@ body {
   margin-bottom: 20px;
   padding: 10px;
   border: 1px solid #ccc;
+  
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #eaeaea;
+
 }
 
 #pages-container {
@@ -43,6 +50,12 @@ canvas {
   display: flex;
   gap: 10px;
   margin-bottom: 10px;
+
+  position: sticky;
+  top: 50px;
+  z-index: 1000;
+  background-color: #eaeaea;
+
 }
 
 #language-selector {
@@ -76,4 +89,18 @@ button:active:not(#save-btn) {
   top: -100px;
   left: -100px;
   opacity: 0.5;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+footer a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #007bff;
+}
+footer a:hover {
+  text-decoration: underline;
 }
