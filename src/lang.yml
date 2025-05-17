@@ -118,3 +118,22 @@ es-es:
   footer:
     text: Todos los derechos reservados.
     licenseLinkText: Licencia
+tt-ru:
+  langName: Татарча
+  defaultTitle: PDF шәхесен яшерү
+  defaultDescription: PDF документларын шәхесен яшерү һәм конфиденциальлекне саклау өчен инструмент.
+  notification:
+    noFileToSave: PDF файлны сайлагыз.
+  ui:
+    quality: Саклау сыйфаты (файл зурлыгына тәэсир итә)
+    save: Сакларга
+    color: Төсләр
+    size: Зурлык
+    circle: Диск
+    square: Квадрат
+    page: Бит
+    undo: Соңгы гамәлне кире кагу
+    reset: Башлангыч хәлгә кайтару
+    pdfSavePrefix: Шәхесен яшерелгән
+  footer:
+    text: Барлык хокуклар да сакланган.
