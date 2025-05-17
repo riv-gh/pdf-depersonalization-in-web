@@ -12,7 +12,8 @@ A small web application to simplify the depersonalization of pdf files
 [View on GitHub Pages](https://riv-gh.github.io/pdf-depersonalization-in-web/)
 
 
-![image](https://github.com/user-attachments/assets/ee7711f6-4092-4ab4-be15-f5ae9c041ddb)
+![image](https://github.com/user-attachments/assets/81d36fbf-6e25-40e6-b3d7-c81ca7ed8f9f)
+
 
 
 
@@ -39,6 +40,7 @@ services:
         #   fr-FR – French (France)
         #   ru-RU – Russian (Russia)
         #   uk-UA – Ukrainian (Ukraine)
+        #   tt-RU – Tatar (Russia)
         BRUSH_COLOR: "#ffffff"
         BRUSH_SIZE: 25 # from 1 to 50
         SAVE_QUALITY: 0.2 # from 0.1 to 1
