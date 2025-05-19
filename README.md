@@ -1,7 +1,7 @@
 # pdf-depersonalization-in-web
 
-[![Docker Pulls](https://img.shields.io/docker/pulls/daenur/pdf-depersonalization-in-web)](https://hub.docker.com/r/daenur/pdf-depersonalization-in-web)
-[![Last Tag](https://img.shields.io/github/v/tag/riv-gh/pdf-depersonalization-in-web)](https://github.com/riv-gh/pdf-depersonalization-in-web/tags)
+[![Latest Release](https://img.shields.io/github/release-pre/riv-gh/pdf-depersonalization-in-web.svg?label=Latest%20Release)](https://github.com/riv-gh/pdf-depersonalization-in-web/releases)
+[![Docker Pulls](https://img.shields.io/docker/pulls/daenur/pdf-depersonalization-in-web.svg?label=Docker%20Pulls)](https://hub.docker.com/r/daenur/pdf-depersonalization-in-web)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Repo stars](https://img.shields.io/github/stars/riv-gh/pdf-depersonalization-in-web?style=social)](https://github.com/riv-gh/pdf-depersonalization-in-web)
 
