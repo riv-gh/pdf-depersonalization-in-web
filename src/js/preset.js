@@ -9,7 +9,7 @@ fetch('./configs/config.json')
   })
   .then(config => {
     console.log('Loaded config:', config);
-    initLanguage(config.DEFAULT_LANG.toLowerCase());
+    initLanguage(config.DEFAULT_LANG.split('-')[0].toLowerCase());
     setConfigText('#year', (new Date()).getFullYear());
     setConfigText('#app-title', config.CUSTOM_TITLE);
     setConfigText('#app-description', config.CUSTOM_DESCRIPTION);

@@ -1,6 +1,6 @@
 import lang from './../lang.yml';
 
-let currentLang = 'en-us';
+let currentLang = 'en';
 
 function getTranslation(key) {
   const keys = key.split('.');

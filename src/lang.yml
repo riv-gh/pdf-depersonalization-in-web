@@ -1,4 +1,4 @@
-uk-ua:
+uk:
   langName: Українська
   defaultTitle: PDF знеособлення
   defaultDescription: Інструмент для знеособлення PDF-документів та збереження конфіденційності.
@@ -18,7 +18,7 @@ uk-ua:
   footer:
     text: Всі права захищені.
     licenseLinkText: Ліцензія
-ru-ru:
+ru:
   langName: Русский
   defaultTitle: PDF деперсонализация
   defaultDescription: Инструмент для деперсонализации PDF-документов и сохранения конфиденциальности.
@@ -38,7 +38,7 @@ ru-ru:
   footer:
     text: Все права защищены.
     licenseLinkText: Лицензия
-en-us:
+en:
   langName: English
   defaultTitle: PDF depersonalization
   defaultDescription: Tool for depersonalization PDF documents and preserving privacy.
@@ -58,7 +58,7 @@ en-us:
   footer:
     text: All rights reserved.
     licenseLinkText: License
-de-de:
+de:
   langName: Deutsch
   defaultTitle: PDF-Datenschutz
   defaultDescription: Tool zur Anonymisierung von PDF-Dokumenten und zum Schutz der Privatsphäre.
@@ -78,7 +78,7 @@ de-de:
   footer:
     text: Alle Rechte vorbehalten.
     licenseLinkText: Lizenz
-fr-fr:
+fr:
   langName: Français
   defaultTitle: Dépersonnalisation PDF
   defaultDescription: Outil de dépersonnalisation des documents PDF et de préservation de la vie privée.
@@ -98,7 +98,7 @@ fr-fr:
   footer:
     text: Tous droits réservés.
     licenseLinkText: Licence
-es-es:
+es:
   langName: Español
   defaultTitle: Despersonalización de PDF
   defaultDescription: Herramienta para la despersonalización de documentos PDF y la preservación de la privacidad.
@@ -118,7 +118,7 @@ es-es:
   footer:
     text: Todos los derechos reservados.
     licenseLinkText: Licencia
-tt-ru:
+tt:
   langName: Татарча
   defaultTitle: PDF шәхесен яшерү
   defaultDescription: PDF документларын шәхесен яшерү һәм конфиденциальлекне саклау өчен инструмент.
