@@ -1,43 +1,3 @@
-uk:
-  langName: Українська
-  defaultTitle: PDF знеособлення
-  defaultDescription: Інструмент для знеособлення PDF-документів та збереження конфіденційності.
-  notification:
-    noFileToSave: Будь ласка, виберіть PDF файл.
-  ui:
-    quality: Якість збереження (вплаває на розмір файлу)
-    save: Зберегти
-    color: Колір
-    size: Розмір
-    circle: Коло
-    square: Квадрат
-    page: Cторінка
-    undo: Скасувати останню дію
-    reset: Скинути до початкового стану
-    pdfSavePrefix: Знеособлено
-  footer:
-    text: Всі права захищені.
-    licenseLinkText: Ліцензія
-ru:
-  langName: Русский
-  defaultTitle: PDF деперсонализация
-  defaultDescription: Инструмент для деперсонализации PDF-документов и сохранения конфиденциальности.
-  notification:
-    noFileToSave: Пожалуйста, выберите PDF файл.
-  ui:
-    quality: Качество сохранения (влияет на размер файла)
-    save: Сохранить
-    color: Цвет
-    size: Размер
-    circle: Круг
-    square: Квадрат
-    page: Страница
-    undo: Отменить последнее действие
-    reset: Сбросить до начального состояния
-    pdfSavePrefix: Деперсонализировано
-  footer:
-    text: Все права защищены.
-    licenseLinkText: Лицензия
 en:
   langName: English
   defaultTitle: PDF depersonalization
@@ -58,6 +18,7 @@ en:
   footer:
     text: All rights reserved.
     licenseLinkText: License
+
 de:
   langName: Deutsch
   defaultTitle: PDF-Datenschutz
@@ -78,26 +39,7 @@ de:
   footer:
     text: Alle Rechte vorbehalten.
     licenseLinkText: Lizenz
-fr:
-  langName: Français
-  defaultTitle: Dépersonnalisation PDF
-  defaultDescription: Outil de dépersonnalisation des documents PDF et de préservation de la vie privée.
-  notification:
-    noFileToSave: Veuillez sélectionner un fichier PDF.
-  ui:
-    quality: Qualité de sauvegarde (affecte la taille du fichier)
-    save: Enregistrer
-    color: Couleur
-    size: Taille
-    circle: Cercle
-    square: Carré
-    page: Page
-    undo: Annuler la dernière action
-    reset: Réinitialiser à l'état initial
-    pdfSavePrefix: Dépersonnalisé
-  footer:
-    text: Tous droits réservés.
-    licenseLinkText: Licence
+
 es:
   langName: Español
   defaultTitle: Despersonalización de PDF
@@ -118,6 +60,49 @@ es:
   footer:
     text: Todos los derechos reservados.
     licenseLinkText: Licencia
+
+fr:
+  langName: Français
+  defaultTitle: Dépersonnalisation PDF
+  defaultDescription: Outil de dépersonnalisation des documents PDF et de préservation de la vie privée.
+  notification:
+    noFileToSave: Veuillez sélectionner un fichier PDF.
+  ui:
+    quality: Qualité de sauvegarde (affecte la taille du fichier)
+    save: Enregistrer
+    color: Couleur
+    size: Taille
+    circle: Cercle
+    square: Carré
+    page: Page
+    undo: Annuler la dernière action
+    reset: Réinitialiser à l'état initial
+    pdfSavePrefix: Dépersonnalisé
+  footer:
+    text: Tous droits réservés.
+    licenseLinkText: Licence
+
+ru:
+  langName: Русский
+  defaultTitle: PDF деперсонализация
+  defaultDescription: Инструмент для деперсонализации PDF-документов и сохранения конфиденциальности.
+  notification:
+    noFileToSave: Пожалуйста, выберите PDF файл.
+  ui:
+    quality: Качество сохранения (влияет на размер файла)
+    save: Сохранить
+    color: Цвет
+    size: Размер
+    circle: Круг
+    square: Квадрат
+    page: Страница
+    undo: Отменить последнее действие
+    reset: Сбросить до начального состояния
+    pdfSavePrefix: Деперсонализировано
+  footer:
+    text: Все права защищены.
+    licenseLinkText: Лицензия
+
 tt:
   langName: Татарча
   defaultTitle: PDF шәхесен яшерү
@@ -137,3 +122,24 @@ tt:
     pdfSavePrefix: Шәхесен яшерелгән
   footer:
     text: Барлык хокуклар да сакланган.
+
+uk:
+  langName: Українська
+  defaultTitle: PDF знеособлення
+  defaultDescription: Інструмент для знеособлення PDF-документів та збереження конфіденційності.
+  notification:
+    noFileToSave: Будь ласка, виберіть PDF файл.
+  ui:
+    quality: Якість збереження (вплаває на розмір файлу)
+    save: Зберегти
+    color: Колір
+    size: Розмір
+    circle: Коло
+    square: Квадрат
+    page: Cторінка
+    undo: Скасувати останню дію
+    reset: Скинути до початкового стану
+    pdfSavePrefix: Знеособлено
+  footer:
+    text: Всі права захищені.
+    licenseLinkText: Ліцензія
