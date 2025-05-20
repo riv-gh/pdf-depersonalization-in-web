@@ -1,5 +1,5 @@
 # Use the official Node.js image to build the application
-FROM node:22-slim AS build
+FROM node:23.11-alpine AS build
 
 # Set the working directory
 WORKDIR /app
