@@ -17,6 +17,9 @@ COPY webpack.config.js ./
 # Build the application
 RUN npm run build
 
+# Copy config template to docker image
+COPY ./src/configs/config.tpl.json ./dist/configs/config.tpl.json
+
 # Use the official Nginx image to serve the application
 FROM nginx:alpine
 
