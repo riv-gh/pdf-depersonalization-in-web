@@ -1,8 +1,21 @@
+:root {
+  --background-color: #eaeaea;
+  --border: 1px solid #ccc;
+  --page-border: 1px solid #000;
+  --link-color: #007bff;
+  --btn-background-color: #cfe6ff;
+  --btn-text-color: #000;
+  --btn-hover-background-color: #6fb5ff;
+  --btn-hover-text-color: #fff;
+  --btn-active-background-color: #007bff;
+  --btn-active-text-color: #fff;
+}
+
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
   min-width: 520px;
-  background-color: #eaeaea;
+  background-color: var(--background-color);
 }
 
 #uplad-download-container {
@@ -17,12 +30,12 @@ body {
   align-items: center;
   margin-bottom: 20px;
   padding: 10px;
-  border: 1px solid #ccc;
+  border: var(--border);
   
   position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: #eaeaea;
+  background-color: var(--background-color);
 
 }
 
@@ -31,7 +44,7 @@ body {
 }
 
 .page {
-  border: 1px solid #ccc;
+  border: var(--border);
   padding: 10px;
   margin-bottom: 20px;
 }
@@ -41,7 +54,7 @@ body {
 }
 
 canvas {
-  border: 1px solid #000;
+  border: var(--page-border);
   display: block;
   margin-bottom: 10px;
 }
@@ -54,7 +67,7 @@ canvas {
   position: sticky;
   top: 50px;
   z-index: 1000;
-  background-color: #eaeaea;
+  background-color: var(--background-color);
 
 }
 
@@ -66,19 +79,20 @@ canvas {
 
 button:not(#save-btn) {
   padding: 5px 10px;
-  background-color: #cfe6ff;
+  background-color: var(--btn-background-color);
+  color: var(--btn-text-color);
   cursor: pointer;
 }
 
 button:hover:not(#save-btn) {
-  background-color: #6fb5ff;
-  color: #fff;
+  background-color: var(--btn-hover-background-color);
+  color: var(--btn-hover-text-color);
 }
 
 button.active:not(#save-btn),
 button:active:not(#save-btn) {
-  background-color: #007BFF;
-  color: #fff;
+  background-color: var(--btn-active-background-color);
+  color: var(--btn-active-text-color);
 }
 
 #cursor {
@@ -91,16 +105,21 @@ button:active:not(#save-btn) {
   opacity: 0.5;
 }
 
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 footer {
   text-align: center;
   padding: 20px;
   font-size: 14px;
 }
+
 footer a {
   margin: 0 10px;
-  text-decoration: none;
-  color: #007bff;
-}
-footer a:hover {
-  text-decoration: underline;
-}
+} 
