@@ -4,7 +4,11 @@ let currentLang = 'en';
 
 function getTranslation(key) {
   const keys = key.split('.');
-  return keys.reduce((obj, k) => (obj && obj[k] ? obj[k] : null), lang[currentLang]) || key;
+  return (
+    keys.reduce((obj, k) => (obj && obj[k] ? obj[k] : null), lang[currentLang]) || 
+    keys.reduce((obj, k) => (obj && obj[k] ? obj[k] : null), lang['en']) || // если не найдено, возвращаем английский
+    key // если не найдено, возвращаем ключ
+  );
 }
 
 const languageSelector = document.getElementById('language-selector');
