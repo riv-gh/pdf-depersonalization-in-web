@@ -52,6 +52,10 @@ function setupCanvasDrawing(pageConfig) {
     ctx.lineWidth = pageConfig.brushSize;
     ctx.lineCap = pageConfig.brushShape;
     ctx.lineJoin = pageConfig.brushShape;
+
+    ctx.lineCap = pageConfig.brushShape === "square" ? "butt" : "round"; // Для квадрата используем "butt"
+    ctx.lineJoin = pageConfig.brushShape === "square" ? "miter" : "round"; // Для квадрата используем "miter"
+  
     ctx.lineTo(pos.x, pos.y);
     ctx.stroke();
     lastPos = pos;
