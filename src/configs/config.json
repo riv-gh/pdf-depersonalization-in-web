@@ -2,7 +2,8 @@
   "CUSTOM_TITLE": "",
   "CUSTOM_DESCRIPTION": "",
   "DEFAULT_LANG": "en",
-  "BRUSH_COLOR": "#00f",
+  "SHOW_LANG_SELECTOR": true,
+  "BRUSH_COLOR": "#ffffff",
   "BRUSH_SIZE": "25",
   "SAVE_QUALITY": "0.2"
 }

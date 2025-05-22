@@ -11,6 +11,13 @@
   --btn-active-text-color: #fff;
 }
 
+.hide { 
+  display: none;
+}
+.show {
+  display: block;
+}
+
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
@@ -75,6 +82,7 @@ canvas {
   position: absolute;
   top: 10px;
   right: 10px;
+  display: none; /* Спрятан по умолчанию зависит от .hide/.show */
 }
 
 button:not(#save-btn) {

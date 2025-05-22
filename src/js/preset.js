@@ -16,6 +16,9 @@ fetch('./configs/config.json')
     setConfigRangeValue('#save-quality-slider', config.SAVE_QUALITY);
     setConfigRangeValue('#global-size-slider', config.BRUSH_SIZE);
     setConfigColorValue('#global-color-picker', config.BRUSH_COLOR); 
+    console.log(config.SHOW_LANG_SELECTOR);
+    console.log(config.SHOW_LANG_SELECTOR==='false' ? 'hide' : 'show');
+    setConfigClassName('#language-selector', config.SHOW_LANG_SELECTOR==='false' ? 'hide' : 'show');
   })
   .catch(error => {
     console.error('Error fetching config.json:', error);
@@ -52,3 +55,10 @@ function setConfigColorValue(selector, value) {
     element.value = value;
   });
 }
+
+function setConfigClassName(selector, className) {
+  if (!className) return;
+  document.querySelectorAll(selector).forEach(element => {
+    element.classList.add(className);
+  });
+} 
