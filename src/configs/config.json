@@ -2,7 +2,7 @@
   "CUSTOM_TITLE": "",
   "CUSTOM_DESCRIPTION": "",
   "DEFAULT_LANG": "en",
-  "SHOW_LANG_SELECTOR": true,
+  "SHOW_LANG_SELECTOR": "true",
   "BRUSH_COLOR": "#ffffff",
   "BRUSH_SIZE": "25",
   "SAVE_QUALITY": "0.2"
