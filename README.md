@@ -12,7 +12,7 @@ A small web application to simplify the depersonalization of pdf files
 [View on GitHub Pages](https://riv-gh.github.io/pdf-depersonalization-in-web/)
 
 
-![image](https://github.com/user-attachments/assets/81d36fbf-6e25-40e6-b3d7-c81ca7ed8f9f)
+![image](https://github.com/user-attachments/assets/6c4f2e0f-b533-4104-9969-d00fdafff691)
 
 
 
@@ -32,15 +32,16 @@ services:
     environment:
         CUSTOM_TITLE: "change the title if needed"
         CUSTOM_DESCRIPTION: "change the description if needed"
-        DEFAULT_LANG: en-US
+        DEFAULT_LANG: en # "en-US" avalible too
+        SHOW_LANG_SELECTOR: true # or false   
         # Avalible languages:
-        #   de-DE – German (Germany)
-        #   en-US – English (United States) [default]
-        #   es-ES – Spanish (Spain)
-        #   fr-FR – French (France)
-        #   ru-RU – Russian (Russia)
-        #   uk-UA – Ukrainian (Ukraine)
-        #   tt-RU – Tatar (Russia)
+        #  de (de-DE) – German (Germany)
+        #  en (en-US) – English (United States) [default]
+        #  es (es-ES) – Spanish (Spain)
+        #  fr (fr-FR) – French (France)
+        #  ru (ru-RU) – Russian (Russia)
+        #  uk (uk-UA) – Ukrainian (Ukraine)
+        #  tt (tt-RU) – Tatar (Russia)
         BRUSH_COLOR: "#ffffff"
         BRUSH_SIZE: 25 # from 1 to 50
         SAVE_QUALITY: 0.2 # from 0.1 to 1
