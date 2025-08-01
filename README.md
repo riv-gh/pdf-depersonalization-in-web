@@ -7,7 +7,7 @@
 
 A small web application to simplify the depersonalization of pdf files
 
-(Млаенький веб-застосунок для спрощення знеособлення pdf файлів)
+(Маленький веб-застосунок для спрощення знеособлення pdf файлів)
 
 [View on GitHub Pages](https://riv-gh.github.io/pdf-depersonalization-in-web/)
 
